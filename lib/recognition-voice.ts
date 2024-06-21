@@ -2,6 +2,8 @@ var rec = require('node-record-lpcm16')
 import EventEmitter from 'events'
 const audio = require('win-audio').mic
 import axios from 'axios'
+import dotenv from 'dotenv'
+dotenv.config()
 function calculateVolume(data:any) {
   var sum = 0;
 
@@ -45,7 +47,7 @@ async start(isMute = false) {
    }
   })
 await axios({
-    url: `https://www.google.com/speech-api/v2/recognize?output=json&lang=id-ID&key=AIzaSyDXVE9EDdgqlnGFEVPAN7CPmtvyWQY0C5c&pFilter=1`, 
+    url: `https://www.google.com/speech-api/v2/recognize?output=json&lang=id-ID&key=${process.env.TOKEN_GOOGLESPEECH}&pFilter=1`, 
     data: fk,
     headers: {
       'Content-Type'  : 'audio/l16; rate=16000;'
