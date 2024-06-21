@@ -22,6 +22,7 @@
 - Install Node JS in your computer<a href="https://nodejs.org/en/"> Here</a>
 - Install SoX Portable for Microphone<a href="https://community.chocolatey.org/packages/sox.portable"> SoX Portable - Chocolatey </a>
 - Install Qode (For Executor) <a href="https://www.npmjs.com/package/@nodegui/qode"> Here </a>
+- Get a Token CharacterAI <a href="https://github.com/realcoloride/node_characterai">
 
 
 ### :running: Run Locally
