@@ -8,6 +8,8 @@ var rec = require('node-record-lpcm16');
 const events_1 = __importDefault(require("events"));
 const audio = require('win-audio').mic;
 const axios_1 = __importDefault(require("axios"));
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 function calculateVolume(data) {
     var sum = 0;
     for (let i = 0; i < data.length; i += 2) {
@@ -46,7 +48,7 @@ class Recognition extends events_1.default {
             }
         });
         await (0, axios_1.default)({
-            url: `https://www.google.com/speech-api/v2/recognize?output=json&lang=id-ID&key=AIzaSyDXVE9EDdgqlnGFEVPAN7CPmtvyWQY0C5c&pFilter=1`,
+            url: `https://www.google.com/speech-api/v2/recognize?output=json&lang=id-ID&key=${process.env.TOKEN_GOOGLESPEECH}&pFilter=1`,
             data: fk,
             headers: {
                 'Content-Type': 'audio/l16; rate=16000;'
