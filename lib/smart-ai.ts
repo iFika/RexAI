@@ -16,15 +16,8 @@ export async function SmartThink(text:string):Promise<String> {
         {
             console.log(`Pemanggilan Rex`)
         }
+        //"zb7I4U9OYfewmEgOWLBHScefPeELkm1J-_GZDjHLY1M" -> IS A CHARACTER ASSISTANT, YOU CAN CHANGE IT. on beta.character.ai
         let think:String = await Character_AI(text, "zb7I4U9OYfewmEgOWLBHScefPeELkm1J-_GZDjHLY1M")
-    /*    let answer_t = await google.search(`translate ${think}`, {safe: false, parse_ads: true, page: 0})
-        if(answer_t.translation != undefined)
-        {
-        if(answer_t.translation?.source_language?.toLowerCase() == 'inggris')
-        {
-think = answer_t.translation?.target_text
-        }
-        }*/
         resolve(think)
     })
 }
