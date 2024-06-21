@@ -11,17 +11,17 @@
 ## :star2: About the Project
 
 ### :dart: Features
-- Fetch a Voters from CekDPT
-- 99.9% Accurate (Officially from KPU)
-- Lightweight Library
-- Using Puppeteer
-
+- Using Google API For Speeching and Recognition.
+- Using QT for UI Windows
+- Full Javascript + Typescript (Using Qode)
 
 ## :toolbox: Getting Started
 
 ### :bangbang: Prerequisites
 
 - Install Node JS in your computer<a href="https://nodejs.org/en/"> Here</a>
+- Install SoX Portable for Microphone<a href="https://community.chocolatey.org/packages/sox.portable"> SoX Portable - Chocolatey </a>
+- Install Qode (For Executor) <a href="https://www.npmjs.com/package/@nodegui/qode"> Here </a>
 
 
 ### :running: Run Locally
@@ -29,7 +29,7 @@
 Clone the project
 
 ```bash
-https://github.com/iFika/Open_Pemilu
+https://github.com/iFika/RexAI.git
 ```
 Go to the Project directory
 ```bash
@@ -39,15 +39,19 @@ Install Dependencies
 ```bash
 npm install
 ```
-Run a Example Test
+Run a Builder
 ```bash
-npm run
+npm run build
+```
+Run a Program
+```bash
+npm run main
 ```
 
 
 ## :wave: Contributing
 
-<a href="https://github.com/iFika/Open_Pemilu/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+<a href="https://github.com/iFika/RexAI/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
 
 Contributions are always welcome!
 
